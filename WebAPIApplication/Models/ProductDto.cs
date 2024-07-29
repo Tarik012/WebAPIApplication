@@ -5,9 +5,10 @@ namespace WebAPIApplication.Models
     public class ProductDto
     {
         [Required]
-        [MinLength(2,ErrorMessage ="trop court !!")]
+        [MinLength(2,ErrorMessage ="name trop court !!")]
         public string Name { get; set; } = "";
         [Required]
+        [MinLength(2, ErrorMessage = "brand trop court !!")]
         public string Brand {  get; set; } = "";
         [Required]
         public string Category { get; set; } = "";
